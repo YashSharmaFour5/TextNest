@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+/* frontend/src/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Smooth transitions for colors */
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Darker scrollbar for dark mode */
+}
+
+@body {
+
+}
+
+@theme {
+    --bg-color: var(--bg-color);
+    --text-color: var(--text-color);
+    --border-color: var(--border-color);
+    --muted: var(--muted);
+}
+
+:root {
+    --bg-color: #ffffff; /* Light mode background */
+    --text-color: #000000; /* Light mode text */
+    --border-color: #000000; /* Light mode border color */    
+    --muted : #6b7280; /* Light mode muted text */
+}
+
+.dark {
+    --bg-color: #1a1a1a; /* Dark mode background */
+    --text-color: #ffffff; /* Dark mode text */
+    --border-color: #ffffff; /* Dark mode border color */
+    --muted : #9ca3af; /* Dark mode muted text */
+}

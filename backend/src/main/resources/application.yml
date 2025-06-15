@@ -1,0 +1,31 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: backend
+  data:
+    mongodb:
+      uri: mongodb+srv://yash:7123@cluster0.svytv3l.mongodb.net/reddit_db?retryWrites=true&w=majority&appName=Cluster0
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 10MB    
+app:
+  jwt:
+    secret: b2af37cf770490eb5b5add1d6b6faa706ad710d5a1f7f4bf40d7aeac5123760c4865f85fe493c95edf9fb12257e9cc77847c03dee4fe918f1a95b62b2bc13dcb
+    expiration-ms: '86400000 '
+cloudinary:
+  cloud_name: downo73qv
+  api_key: 387317673666296
+  api_secret: idfhmGgXg5-ag9D-Kkfsg9gHiq0
+CLOUDINARY_URL: cloudinary://387317673666296:idfhmGgXg5-ag9D-Kkfsg9gHiq0@downo73qv
+server:
+  port: 8080
+
+logging:
+  level:
+    com.redditclone.backend: INFO
+    org.springframework.security: DEBUG
+    # You might want to temporarily set the root level to INFO or DEBUG for more context
+    # root: INFO
